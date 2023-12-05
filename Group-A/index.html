@@ -4,65 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <!-- TailwindCDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TailwindCofig -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              vietnam: ["Be Vietnam Pro", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Git-Group-A</title>
   </head>
-  <body>
+  <body class="font-vietnam h-[5000px]">
+
     <header>
-      <div class="container">
+      <div class="w-[calc(100%_-_60px)] mx-auto">
+        <div
+          class="bg-[#ff9500] mt-[20px] p-[14px] flex gap-[23px] justify-center rounded-[8px]"
+        >
+          <span class="text-[#fff] text-[18px] font-normal"
+            >Free Courses. Sale Ends Soon, Get It Now</span
+          >
+          <a href="#">
+            <img src="./assets/icons/header-arrow.svg" alt="arrow icon" />
+          </a>
+        </div>
 
-        <div class="sale-ad">
-            <span>Free Courses. Sale Ends Soon, Get It Now</span>
-            <a href="#">
-              <img src="./assets/icons/header-arrow.svg" alt="arrow icon" />
-            </a>
-          </div>
-
-        <div class="header-container">
-          <div class="left-side">
-            <div class="logo">
+        <div class="flex justify-between p-[20px_132px_24px] items-center">
+          <div class="flex gap-[50px] sticky">
+            <div
+              class="w-[47px] h-[47px] rounded-[8px] bg-[#ff9500] flex items-center justify-center mt-[4px]">
               <a href="#">
                 <img src="./assets/icons/logo.svg" alt="logo" />
               </a>
             </div>
 
             <nav>
-                <ul>
-                    <li class="active">
-                        <a href="./index.html">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>Courses</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>About Us</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>Pricing</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                </ul>
+              <ul class="flex items-center gap-[26px]">
+                <li
+                  class="bg-[#f1f1f3] p-[14px_24px] rounded-[8px] text-[18px] font-normal"
+                >
+                  <a href="./index.html" class="text-[#262626]">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="p-[14px_24px] rounded-[8px] text-[18px] font-normal">
+                  <a href="#" class="text-[#262626]">
+                    <span>Courses</span>
+                  </a>
+                </li>
+                <li class="p-[14px_24px] rounded-[8px] text-[18px] font-normal">
+                  <a href="#" class="text-[#262626]">
+                    <span>About Us</span>
+                  </a>
+                </li>
+                <li class="p-[14px_24px] rounded-[8px] text-[18px] font-normal">
+                  <a href="#" class="text-[#262626]">
+                    <span>Pricing</span>
+                  </a>
+                </li>
+                <li class="p-[14px_24px] rounded-[8px] text-[18px] font-normal">
+                  <a href="#" class="text-[#262626]">
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
             </nav>
 
           </div>
-          <div class="profile">
-            <button>Sign Up</button>
-            <button>Login</button>
+
+          <div class="flex gap-[30px]">
+            <button
+              class="border-transparent border cursor-pointer p-[14px_34px] rounded-[8px] text-[18px] font-normal bg-[#fff] active:scale-[0.99]">
+              Sign Up
+            </button>
+            <button
+              class="border-transparent border cursor-pointer p-[14px_34px] rounded-[8px] text-[18px] font-normal bg-[#ff9500] text-[#fff] active:scale-[0.99]">
+              Login
+            </button>
           </div>
         </div>
-
       </div>
     </header>
   </body>
