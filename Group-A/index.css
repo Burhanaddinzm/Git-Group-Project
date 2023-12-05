@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -35,7 +35,7 @@ ul {
 /* header .container {
 } */
 
-header .container .sale-ad {
+/* header .container .sale-ad {
   background: #ff9500;
   margin-top: 20px;
   padding: 14px;
@@ -43,9 +43,9 @@ header .container .sale-ad {
   gap: 23px;
   border-radius: 8px;
   display: flex;
-}
+} */
 
-header .container .sale-ad span {
+/* header .container .sale-ad span {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -56,9 +56,9 @@ header .container .sale-ad span {
   justify-content: space-between;
   padding: 20px 132px 24px;
   align-items: center;
-}
+} */
 
-.header-container .logo {
+/* .header-container .logo {
   background: #ff9500;
   width: 47px;
   height: 47px;
@@ -66,37 +66,37 @@ header .container .sale-ad span {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.header-container .left-side {
+/* .header-container .left-side {
   display: flex;
   gap: 50px;
-}
+} */
 
-.header-container .left-side nav ul {
+/* .header-container .left-side nav ul {
   display: flex;
   align-items: center;
   gap: 26px;
-}
+} */
 
-.header-container .left-side nav li {
+/* .header-container .left-side nav li {
   padding: 14px 24px;
   border-radius: 8px;
   font-size: 18px;
   font-weight: 400;
-}
+} */
 
-.header-container .left-side nav li a {
+/* .header-container .left-side nav li a {
     color: #262626;
-}
+} */
 
 
-.header-container .profile {
+/* .header-container .profile {
   display: flex;
   gap: 30px;
-}
+} */
 
-.header-container .profile button {
+/* .header-container .profile button {
   background-color: #fff;
   border: 1px solid transparent;
   cursor: pointer;
@@ -104,9 +104,9 @@ header .container .sale-ad span {
   border-radius: 8px;
   font-size: 18px;
   font-weight: 400;
-}
+} */
 
-.header-container .profile button:nth-child(2) {
+/* .header-container .profile button:nth-child(2) {
   background: #ff9500;
   color: #fff;
 }
@@ -119,4 +119,4 @@ header .container .sale-ad span {
     .container{
         width: 1440px;
     }
-}
+} */ */
