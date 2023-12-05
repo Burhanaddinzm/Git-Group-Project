@@ -114,3 +114,9 @@ header .container .sale-ad span {
 .header-container .profile button:active {
   scale: 0.99;
 }
+
+@media screen  and (max-width:1440px) {
+    .container{
+        width: 1440px;
+    }
+}
