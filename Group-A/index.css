@@ -210,7 +210,7 @@ footer .top-side .right-side .info-wrapper .wrapper {
   width: 250px;
 }
 
-footer .top-side .right-side .info-wrapper .wrapper h4 {
+footer .top-side .right-side .wrapper h4 {
   font-size: 20px;
   font-weight: 600;
 }
@@ -313,7 +313,7 @@ footer .bottom-side span {
     width: 230px;
   }
 
-  footer .top-side .right-side .info-wrapper .wrapper h4 {
+  footer .top-side .right-side .wrapper h4 {
     font-size: 18px;
   }
 
