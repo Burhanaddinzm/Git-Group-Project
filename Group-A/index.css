@@ -21,6 +21,7 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
   height: 200vh;
   background-color: #f7f7f8;
+  position: relative;
 }
 
 .container {
@@ -40,6 +41,7 @@ body {
   display: flex;
   gap: 23px;
   justify-content: center;
+  align-items: center;
 }
 
 .sale-wrapper span {
@@ -74,7 +76,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4px;
+  /* margin-top: 4px; */
 }
 
 nav ul {
@@ -146,6 +148,9 @@ nav a {
 
 footer {
   background: #fff;
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
 }
 
 footer .container {
@@ -170,10 +175,12 @@ footer .text-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
 }
 
 footer .text-container .wrapper a {
   display: flex;
+  align-items: center;
   gap: 6px;
   font-size: 18px;
   color: #262626;
@@ -231,4 +238,82 @@ footer .bottom-side span {
     font-size: 18px;
     color: #656567;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1440px){
+    .container {
+        max-width: 1280px;
+      }
+      
+      .sale-wrapper {
+        padding: 10px;
+        max-width: 1400px;
+      }
+      
+      .sale-wrapper span {
+        font-size: 14px;
+      }
+      
+      header {
+        position: sticky;
+        top: 0;
+        background-color: #f7f7f8;
+      }
+      
+      .header {
+        padding: 16px 0 20px 0;
+      }
+      
+      nav li {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+      
+      .header .right-side a {
+        padding: 12px 24px;
+        font-size: 14px;
+      }
+      
+      footer .container {
+        padding: 60px 0 20px 0;
+        gap: 30px;
+      }
+      
+      footer .top-side .left-side {
+        gap: 30px;
+      }
+      
+      footer .text-container {
+        gap: 14px;
+      }
+      
+      footer .text-container .wrapper a {
+        gap: 4px;
+        font-size: 16px;
+      }
+      
+      footer .top-side .right-side {
+        gap: 24px;
+      }
+      
+      footer .top-side .right-side .wrapper {
+        gap: 10px;
+        width: 230px;
+      }
+      
+      footer .top-side .right-side .wrapper h4 {
+        font-size: 18px;
+      }
+      
+      footer .top-side .right-side .wrapper ul {
+        font-size: 16px;
+      }
+      
+      footer .top-side .right-side .wrapper .social-wrapper div {
+          padding: 12px;
+      }
+
+      footer .bottom-side span {
+          font-size: 14px;
+      }
 }
