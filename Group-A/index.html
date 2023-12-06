@@ -7,18 +7,24 @@
     <!-- <link rel="stylesheet" href="./index.css" /> -->
     <!-- TailwindCDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- TailwindCofig -->
+    <!-- TailwindConfig -->
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              vietnam: ["Be Vietnam Pro", "sans-serif"],
+        tailwind.config = {
+          theme: {
+            screens: {
+              sm: "150px",
+              md: "834px",
+              lg: "1200px",
+              xl: "1440px",
+            },
+            extend: {
+              fontFamily: {
+                vietnam: ["Be Vietnam Pro", "sans-serif"],
+              },
             },
           },
-        },
-      };
-    </script>
+        };
+      </script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,18 +35,18 @@
     <title>Git-Group-A</title>
   </head>
 
-  <body class="font-vietnam h-[2000px] bg-[#F7F7F8]">
+  <body class="font-vietnam h-[2000px] bg-[#F7F7F8]"> 
     <div
-    class="sale-wrapper bg-[#ff9500] mt-[20px] p-[14px] rounded-[8px] w-[calc(100%_-_60px)] mx-auto">
-    <a href="#" class="flex gap-[23px] justify-center">
-    <span class="text-[#fff] text-[18px] font-normal"
+    class="sale-wrapper bg-[#ff9500] mt-[20px] p-[14px] rounded-[8px] xl:max-w-[1860px] md:p-[10px] md:max-w-[1400px] sm:max-w-[calc(100%_-_32px)] sm:p-[10px_16px] mx-auto">
+    <a href="#" class="flex md:gap-[23px] sm:gap-[12px] justify-center">
+    <span class="text-[#fff] lg:text-[18px] sm:text-[14px] font-normal"
       >Free Courses. Sale Ends Soon, Get It Now</span
     >
       <img src="./assets/icons/header-arrow.svg" alt="arrow icon" />
     </a>
   </div>
-    <header class="sticky top-0">
-      <div class="mycontainer w-[calc(100%_-_324px)] mx-auto">
+    <header class="sticky top-0 bg-[#F7F7F8]">
+      <div class="mycontainer xl:max-w-[1596px] md:max-w-[1280px] sm:max-w-[calc(100%_-_32px)] mx-auto">
 
         <div class="header flex justify-between p-[20px_0_24px_0] items-center">
           <div class="left-side flex gap-[50px]">
@@ -51,31 +57,31 @@
               </a>
             </div>
 
-            <nav>
+            <nav class="sm:hidden sm:p-[12px_20px]">
               <ul class="flex items-center gap-[26px]">
                 <li
-                  class="bg-[#f1f1f3] p-[14px_24px] rounded-[8px] text-[18px] font-normal"
+                  class="bg-[#f1f1f3] xl:p-[14px_24px] md:p-[12px_20px] rounded-[8px] xl:text-[18px] md:text-[14px] font-normal"
                 >
                   <a href="./index.html" class="text-[#262626]">
                     <span>Home</span>
                   </a>
                 </li>
-                <li class="p-[14px_24px] rounded-[8px] text-[18px] font-normal">
+                <li class="xl:p-[14px_24px] md:p-[12px_20px] rounded-[8px] xl:text-[18px] md:text-[14px] font-normal">
                   <a href="./courses.html" class="text-[#262626]">
                     <span>Courses</span>
                   </a>
                 </li>
-                <li class="p-[14px_24px] rounded-[8px] text-[18px] font-normal">
+                <li class="xl:p-[14px_24px] md:p-[12px_20px] rounded-[8px] xl:text-[18px] md:text-[14px] font-normal">
                   <a href="./about.html" class="text-[#262626]">
                     <span>About Us</span>
                   </a>
                 </li>
-                <li class="p-[14px_24px] rounded-[8px] text-[18px] font-normal">
+                <li class="xl:p-[14px_24px] md:p-[12px_20px] rounded-[8px] xl:text-[18px] md:text-[14px] font-normal">
                   <a href="./pricing.html" class="text-[#262626]">
                     <span>Pricing</span>
                   </a>
                 </li>
-                <li class="p-[14px_24px] rounded-[8px] text-[18px] font-normal">
+                <li class="xl:p-[14px_24px] md:p-[12px_20px] rounded-[8px] xl:text-[18px] md:text-[14px] font-normal">
                   <a href="#" class="text-[#262626]">
                     <span>Contact</span>
                   </a>
@@ -85,15 +91,20 @@
 
           </div>
 
-          <div class="right-side flex gap-[30px]">
+          <div class="right-side flex md:gap-[30px] sm:gap-[20px]">
             <a href="./signup.html"
-              class="border-transparent border cursor-pointer p-[14px_34px] rounded-[8px] text-[18px] font-normal active:scale-[0.99]">
+              class="border-transparent border cursor-pointer xl:p-[14px_34px] md:p-[12px_24px] sm:p-[12px_20px] rounded-[8px] xl:text-[18px] md:text-[14px] font-normal active:scale-[0.99]">
               Sign Up
             </a>
             <a href="./login.html"
-              class="border-transparent border cursor-pointer p-[14px_34px] rounded-[8px] text-[18px] font-normal bg-[#ff9500] text-[#fff] active:scale-[0.99]">
+              class="border-transparent border cursor-pointer xl:p-[14px_34px] md:p-[12px_24px] sm:p-[12px_20px] rounded-[8px] xl:text-[18px] md:text-[14px] font-normal bg-[#ff9500] text-[#fff] active:scale-[0.99]">
               Login
             </a>
+            <div class="burger-menu flex flex-col gap-[5px]">
+                <div class="bar bg-[#000] w-[30px] h-[2px]"></div>
+                <div class="bar bg-[#000] w-[30px] h-[2px]"></div>
+                <div class="bar bg-[#000] w-[15px] h-[2px]"></div>
+            </div>
           </div>
 
         </div>
