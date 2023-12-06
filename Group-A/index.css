@@ -76,8 +76,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 4px; */
 }
+
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 nav ul {
   display: flex;
@@ -138,7 +144,7 @@ nav a {
 .burger-menu .bar {
   background-color: #000;
   width: 30px;
-  height: 2px;
+  height: 3px;
   border-radius: 5px;
 }
 
@@ -150,7 +156,7 @@ footer {
   background: #fff;
   position: absolute;
   bottom: 0;
-  min-width: 100%;
+  width: 100%;
 }
 
 footer .container {
@@ -192,19 +198,24 @@ footer .top-side .right-side {
   gap: 30px;
 }
 
-footer .top-side .right-side .wrapper {
+footer .top-side .right-side .info-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+footer .top-side .right-side .info-wrapper .wrapper {
   display: flex;
   flex-direction: column;
   gap: 14px;
   width: 250px;
 }
 
-footer .top-side .right-side .wrapper h4 {
+footer .top-side .right-side .info-wrapper .wrapper h4 {
   font-size: 20px;
   font-weight: 600;
 }
 
-footer .top-side .right-side .wrapper ul {
+footer .top-side .right-side .info-wrapper .wrapper ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -219,101 +230,204 @@ footer .top-side .right-side .wrapper .social-wrapper {
 }
 
 footer .top-side .right-side .wrapper .social-wrapper div {
-    padding: 14px;
-    background: #F7F7F8;
-    border-radius: 8px;
+  padding: 14px;
+  background: #f7f7f8;
+  border-radius: 8px;
+  margin-top: 14px;
 }
 
 footer .line {
-    background-color: #F1F1F3;
-    width: 100%;
-    height: 1px;
+  background-color: #f1f1f3;
+  width: 100%;
+  height: 1px;
 }
 
-footer .bottom-side{
-    text-align: center;
+footer .bottom-side {
+  text-align: center;
 }
 
 footer .bottom-side span {
-    font-size: 18px;
-    color: #656567;
-    font-weight: 400;
+  font-size: 18px;
+  color: #656567;
+  font-weight: 400;
 }
 
-@media screen and (max-width: 1440px){
-    .container {
-        max-width: 1280px;
-      }
-      
-      .sale-wrapper {
-        padding: 10px;
-        max-width: 1400px;
-      }
-      
-      .sale-wrapper span {
-        font-size: 14px;
-      }
-      
-      header {
-        position: sticky;
-        top: 0;
-        background-color: #f7f7f8;
-      }
-      
-      .header {
-        padding: 16px 0 20px 0;
-      }
-      
-      nav li {
-        padding: 12px 20px;
-        font-size: 14px;
-      }
-      
-      .header .right-side a {
-        padding: 12px 24px;
-        font-size: 14px;
-      }
-      
-      footer .container {
-        padding: 60px 0 20px 0;
-        gap: 30px;
-      }
-      
-      footer .top-side .left-side {
-        gap: 30px;
-      }
-      
-      footer .text-container {
-        gap: 14px;
-      }
-      
-      footer .text-container .wrapper a {
-        gap: 4px;
-        font-size: 16px;
-      }
-      
-      footer .top-side .right-side {
-        gap: 24px;
-      }
-      
-      footer .top-side .right-side .wrapper {
-        gap: 10px;
-        width: 230px;
-      }
-      
-      footer .top-side .right-side .wrapper h4 {
-        font-size: 18px;
-      }
-      
-      footer .top-side .right-side .wrapper ul {
-        font-size: 16px;
-      }
-      
-      footer .top-side .right-side .wrapper .social-wrapper div {
-          padding: 12px;
-      }
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
 
-      footer .bottom-side span {
-          font-size: 14px;
-      }
+  .sale-wrapper {
+    padding: 10px;
+    max-width: 1400px;
+  }
+
+  .sale-wrapper span {
+    font-size: 14px;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #f7f7f8;
+  }
+
+  .header {
+    padding: 16px 0 20px 0;
+  }
+
+  nav li {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .header .right-side a {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  footer .container {
+    padding: 60px 0 20px 0;
+    gap: 30px;
+  }
+
+  footer .top-side .left-side {
+    gap: 30px;
+  }
+
+  footer .text-container {
+    gap: 14px;
+  }
+
+  footer .text-container .wrapper a {
+    gap: 4px;
+    font-size: 16px;
+  }
+
+  footer .top-side .right-side {
+    gap: 24px;
+  }
+
+  footer .top-side .right-side .info-wrapper .wrapper {
+    gap: 10px;
+    width: 230px;
+  }
+
+  footer .top-side .right-side .info-wrapper .wrapper h4 {
+    font-size: 18px;
+  }
+
+  footer .top-side .right-side .info-wrapper .wrapper ul {
+    font-size: 16px;
+  }
+
+  footer .top-side .right-side .wrapper .social-wrapper div {
+    padding: 12px;
+  }
+
+  footer .bottom-side span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: calc(100%-32px);
+    padding: 0 20px;
+  }
+
+  .sale-wrapper {
+    padding: 10px 16px;
+    max-width: calc(100%-32px);
+    margin: 40px 16px 0 ;
+  }
+
+  .sale-wrapper a {
+    justify-content: space-between;
+  }
+
+  .sale-wrapper span {
+    font-size: 14px;
+  }
+
+  .header {
+    padding: 14px 0;
+  }
+
+  .header .left-side {
+    gap: 0px;
+  }
+
+  .logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .header .right-side {
+    gap: 20px;
+  }
+
+  .header .right-side a {
+    padding: 12px 20px;
+  }
+
+  .burger-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  footer .container {
+    padding: 50px 20px 24px;
+    gap: 20px;
+  }
+
+  footer .top-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .text-container {
+    gap: 12px;
+  }
+
+  footer .text-container .wrapper a {
+    gap: 12px;
+    font-size: 15px;
+  }
+
+  footer .top-side .right-side{
+    flex-direction: column;
+  }
+
+  footer .top-side .right-side .info-wrapper {
+    margin-top: 24px;
+    display: flex;
+    gap: 30px;
+  }
+
+  footer .top-side .right-side .info-wrapper .wrapper:nth-child(1) {
+    width: 128px;
+  }
+
+  footer .top-side .right-side .info-wrapper .wrapper:nth-child(2) {
+    width: 205px;
+  }
+
+  footer .top-side .right-side .info-wrapper .wrapper ul {
+    gap: 4px;
+    font-size: 14px;
+  }
+
+  footer .top-side .right-side .wrapper .social-wrapper div {
+    margin-top: 10px;
+    padding: 12px;
+  }
+
+  footer .bottom-side span {
+    font-size: 14px;
+  }
 }
