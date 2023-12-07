@@ -151,9 +151,6 @@ nav a {
 .burger-menu .bar:nth-child(1) {
   width: 18px;
 }
-
-main {}
-
 main .container {
   padding: 109px 0 150px 0;
 }
@@ -182,10 +179,10 @@ main .heading p {
 }
 
 main .sub-container {
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: #fff;
   padding: 50px 50px;
-  flex-direction: column;
+
 }
 
 main .sub-container .paragraph {
@@ -212,8 +209,7 @@ main .sub-container .top button {
   border-radius: 8px;
   border: 1px solid var(--white-95, #F1F1F3);
   background: var(--white-99, #FCFCFD);
-  padding: 8px 12px;
-  /*sual */
+  padding: 18px 24px;
 }
 
 main .sub-container .images {
@@ -234,12 +230,15 @@ main .sub-container .buttons {
 }
 
 main .sub-container .buttons .left {
+  display: flex;
+  align-items: flex-start;
+}
+main .sub-container .buttons .left  button{
   border-radius: 6px;
   border: 1px solid var(--white-95, #F1F1F3);
   background: var(--absolute-white, #FFF);
-  display: flex;
-  align-items: flex-start;
   gap: 10px;
+  padding: 9px 12px;
 }
 
 main .sub-container .buttons .left p {
@@ -247,31 +246,35 @@ main .sub-container .buttons .left p {
   font-size: 20px;
   font-weight: 500;
 }
-
-main .sub-container .bottom .heading {}
-
 main .sub-container .bottom .heading p {
   display: flex;
   padding: 24px 30px;
   align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
   color: var(--grey-15, #262626);
   font-size: 22px;
   font-weight: 600;
   line-height: 150%;
 }
 main .sub-container .bottom  .cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-
+display: flex;
+justify-content: space-around;
 }
-
+main .sub-container .bottom .cards .card-info h3 {
+  color: var(--grey-15, #262626);
+font-size: 50px;
+font-weight: 800;
+line-height: 150%;
+}
+main .sub-container .bottom .cards .card-info span {
+color: var(--grey-20, #333);
+font-size: 18px;
+font-weight: 500;
+line-height: 150%;
+}
 
 
 footer {
   background: #fff;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
