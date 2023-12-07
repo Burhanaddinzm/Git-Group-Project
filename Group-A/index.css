@@ -183,13 +183,121 @@ nav a {
   line-height: 150%;
 }
 
-.line {
+main .line {
   background-color: #E4E4E7;
   height: 1px;
   max-width: 1860px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
+.achieve-info h2,
+.goals-info h2 {
+  color: #333;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 6px;
+}
+
+.achieve-info p,
+.goals-info p {
+  color: #59595A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 80px;
+}
+
+.achieve-items,
+.goals-items {
+  display: grid;
+  grid-template-columns: repeat(2, 783px);
+  gap: 30px;
+  margin-bottom: 177px;
+}
+
+.achieve-items .item,
+.goals-items .item {
+  padding: 50px;
+  border-radius: 12px;
+  background: white;
+}
+
+.achieve-items .item h4,
+.goals-items .item h4 {
+  margin: 30px 0 14px;
+  color: #262626;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.achieve-items .item p,
+.goals-items .item p {
+  color: #59595A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.goals-items {
+  margin-bottom: 80px;
+}
+
+.goals-footer {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 80px;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.goals-footer-text{
+  z-index: 1;
+}
+
+.goals-footer-text h4 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 20px;
+  width: 1008px;
+}
+
+.goals-footer-text h4 span {
+  color: #FF9500;
+}
+
+.goals-footer-text p {
+  color: #4C4C4D;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.goals-footer img{
+  position: absolute;
+  top: 0;
+  right: 14%;
+}
+
+
+.goals-footer button {
+  height: fit-content;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 18px 24px;
+  border-radius: 8px;
+  background: #FF9500;
+  border: none;
+  cursor: pointer;
+}
 
 /* main end */
 /* footer start */
@@ -335,8 +443,9 @@ footer .bottom-side span {
   /* header end */
   /* main start */
 
-  .main-about {
-    /* max-width: calc(100% - 32px); */
+
+  /* .main-about {
+    max-width: calc(100% - 32px);
     padding-bottom: 40px;
   }
   
@@ -351,8 +460,9 @@ footer .bottom-side span {
   
   .line {
     max-width: 1400px;
-  }
-  
+  } */
+
+
   /* main end */
   /* footer start */
 
@@ -454,8 +564,9 @@ footer .bottom-side span {
   /* header end */
   /* main start */
 
-  .main-about {
-    /* max-width: calc(100% - 32px); */
+
+  /* .main-about {
+    max-width: calc(100% - 32px);
     display:flex;
     flex-direction: column;
     gap: 16px;
@@ -467,13 +578,14 @@ footer .bottom-side span {
   }
   
   .main-about p {
-    /* width: 358px; */
+    width: 358px;
     font-size: 14px;
   }
   
   .line {
     max-width: calc(100%-32px);
-  }
+  } */
+
 
   /* main end */
   /* footer start */
