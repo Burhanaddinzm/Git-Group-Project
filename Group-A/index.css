@@ -78,7 +78,7 @@ header {
   justify-content: center;
 }
 
-.logo img{
+.logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -151,6 +151,123 @@ nav a {
 .burger-menu .bar:nth-child(1) {
   width: 18px;
 }
+
+main {}
+
+main .container {
+  padding: 109px 0 150px 0;
+}
+
+main .container .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+main .heading h2 {
+  color: var(--grey-15, #262626);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 150%;
+  width: 100%;
+}
+
+main .heading p {
+  color: var(--grey-35, #59595A);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  width: fit-content;
+}
+
+main .sub-container {
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 50px 50px;
+  flex-direction: column;
+}
+
+main .sub-container .paragraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .sub-container h4 {
+  color: var(--grey-15, #262626);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+main .sub-container p {
+  color: var(--grey-35, #59595A);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+main .sub-container .top button {
+  border-radius: 8px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--white-99, #FCFCFD);
+  padding: 8px 12px;
+  /*sual */
+}
+
+main .sub-container .images {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .sub-container .images img {
+  border-radius: 8px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+main .sub-container .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+main .sub-container .buttons .left {
+  border-radius: 6px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--absolute-white, #FFF);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+main .sub-container .buttons .left p {
+  color: var(--grey-15, #262626);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main .sub-container .bottom .heading {}
+
+main .sub-container .bottom .heading p {
+  display: flex;
+  padding: 24px 30px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  color: var(--grey-15, #262626);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 150%;
+}
+main .sub-container .bottom  .cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+
 
 footer {
   background: #fff;
@@ -339,7 +456,7 @@ footer .bottom-side span {
   .sale-wrapper {
     padding: 10px 16px;
     max-width: calc(100%-32px);
-    margin: 40px 16px 0 ;
+    margin: 40px 16px 0;
   }
 
   .sale-wrapper a {
@@ -399,7 +516,7 @@ footer .bottom-side span {
     font-size: 15px;
   }
 
-  footer .top-side .right-side{
+  footer .top-side .right-side {
     flex-direction: column;
   }
 
