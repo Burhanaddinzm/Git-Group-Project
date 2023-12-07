@@ -1,223 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <!-- <!-- TailwindCDN -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
-    <!-- TailwindConfig
-    <script>
-        tailwind.config = {
-          theme: {
-            screens: {
-              sm: "150px",
-              md: "834px",
-              lg: "1200px",
-              xl: "1440px",
-            },
-            extend: {
-              fontFamily: {
-                vietnam: ["Be Vietnam Pro", "sans-serif"],
-              },
-            },
-          },
-        };
-      </script> -->
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Git-Group-A</title>
-  </head>
 
-  <body> 
-    <div
-    class="sale-wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Git-Group-A</title>
+</head>
+
+<body>
+  <div class="sale-wrapper">
     <a href="#">
-    <span>Free Courses. Sale Ends Soon, Get It Now</span>
-      <img src="./assets/icons/header-arrow.svg" alt="arrow icon"/>
+      <span>Free Courses. Sale Ends Soon, Get It Now</span>
+      <img src="./assets/icons/header-arrow.svg" alt="arrow icon" />
     </a>
   </div>
-    <header>
-      <div class="container">
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="left-side">
+          <div class="logo">
+            <a href="#">
+              <img src="./assets/icons/logo.svg" alt="logo" />
+            </a>
+          </div>
 
-        <div class="header">
-          <div class="left-side">
-            <div class="logo">
+          <nav>
+            <ul>
+              <li class="active">
+                <a href="./index.html">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="./courses.html">
+                  <span>Courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="./about.html">
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="./pricing.html">
+                  <span>Pricing</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <div class="right-side">
+          <a href="./signup.html">
+            Sign Up
+          </a>
+          <a href="./login.html">
+            Login
+          </a>
+          <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- <main>
+    <div class="container">
+      <div class="main-about">
+        <h2>About Skillbridge</h2>
+        <p>Welcome to our platform, where we are passionate
+          about
+          empowering individuals to master the world of design
+          and development. We offer a wide range of online courses designed to equip learners with the skills and
+          knowledge needed to succeed in the ever-evolving digital landscape.</p>
+      </div>
+    </div>
+    <div class="line"></div> -->
+
+  <footer>
+    <div class="container">
+      <div class="top-side">
+        <div class="left-side">
+          <div class="logo">
+            <a href="#">
+              <img src="./assets/icons/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="text-container">
+            <div class="wrapper">
               <a href="#">
-                <img src="./assets/icons/logo.svg" alt="logo" />
+                <img src="./assets/icons/footer-mail-icon.svg" alt="footer mail">
+                <p>hello@skillbridge.com</p>
               </a>
             </div>
+            <div class="wrapper">
+              <a href="#" class="flex gap-[6px]">
+                <img src="./assets/icons/footer-phone-icon.svg" alt="footer phone">
+                <p>+91 91813 23 2309</p>
+              </a>
+            </div>
+            <div class="wrapper">
+              <a href="#">
+                <img src="./assets/icons/footer-location-icon.svg" alt="footer location">
+                <p>Somewhere in the World</p>
+              </a>
+            </div>
+          </div>
 
-            <nav>
+        </div>
+
+        <div class="right-side">
+          <div class="info-wrapper">
+            <div class="wrapper">
+              <h4>Home</h4>
               <ul>
-                <li class="active">
-                  <a href="./index.html">
-                    <span>Home</span>
-                  </a>
-                </li>
                 <li>
-                  <a href="./courses.html">
-                    <span>Courses</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="./about.html">
-                    <span>About Us</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="./pricing.html">
-                    <span>Pricing</span>
+                  <a href="#">
+                    <span>Benefits</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span>Contact</span>
+                    <span>Our Courses</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Our Testimonials</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Our FAQ</span>
                   </a>
                 </li>
               </ul>
-            </nav>
-
-          </div>
-
-          <div class="right-side">
-            <a href="./signup.html">
-              Sign Up
-            </a>
-            <a href="./login.html">
-              Login
-            </a>
-            <div class="burger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            </div>
+            <div class="wrapper">
+              <h4>About Us</h4>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span>Company</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Achievements</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Our Goals</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
-        </div>
-
-      </div>
-    </header>
-
-    <footer>
-      <div class="container">
-        <div class="top-side">
-          <div class="left-side">
-            <div class="logo">
+          <div class="wrapper">
+            <h4>Social Profiles</h4>
+            <div class="social-wrapper">
               <a href="#">
-                <img src="./assets/icons/logo.svg" alt="logo"/>
+                <div>
+                  <img src="./assets/icons/footer-fb-icon.svg" alt="facebook icon">
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <img src="./assets/icons/footer-tw-icon.svg" alt="twitter icon">
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <img src="./assets/icons/footer-linkedin-icon.svg" alt="linkedin icon">
+                </div>
               </a>
             </div>
-
-            <div class="text-container">
-              <div class="wrapper">
-                <a href="#">
-                  <img src="./assets/icons/footer-mail-icon.svg" alt="footer mail">
-                  <p>hello@skillbridge.com</p>
-                </a>
-              </div>
-              <div class="wrapper">
-                <a href="#"  class="flex gap-[6px]">
-                  <img src="./assets/icons/footer-phone-icon.svg" alt="footer phone">
-                  <p>+91 91813 23 2309</p>
-                </a>
-              </div>
-              <div class="wrapper">
-                <a href="#">
-                  <img src="./assets/icons/footer-location-icon.svg" alt="footer location">
-                  <p>Somewhere in the World</p>
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="right-side">
-            <div class="info-wrapper">
-              <div class="wrapper">
-                <h4>Home</h4>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <span>Benefits</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span>Our Courses</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span>Our Testimonials</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span>Our FAQ</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="wrapper">
-                <h4>About Us</h4>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <span>Company</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span>Achievements</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span>Our Goals</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="wrapper">
-              <h4>Social Profiles</h4>
-              <div class="social-wrapper">
-                <a href="#">
-                  <div>
-                    <img src="./assets/icons/footer-fb-icon.svg" alt="facebook icon">
-                  </div>
-                </a>
-                <a href="#">
-                  <div>
-                    <img src="./assets/icons/footer-tw-icon.svg" alt="twitter icon">
-                  </div>
-                </a>
-                <a href="#">
-                  <div>
-                    <img src="./assets/icons/footer-linkedin-icon.svg" alt="linkedin icon">
-                  </div>
-                </a>
-              </div>
-
-            </div>
           </div>
         </div>
-
-        <div class="line"></div>
-
-        <div class="bottom-side">
-          <span>© 2023 Skillbridge. All rights reserved.</span>
-        </div>
-
       </div>
-    </footer>
-  </body>
+
+      <div class="line"></div>
+
+      <div class="bottom-side">
+        <span>© 2023 Skillbridge. All rights reserved.</span>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
 </html>
