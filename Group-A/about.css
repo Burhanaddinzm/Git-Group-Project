@@ -54,6 +54,7 @@ body {
 /* header start */
 
 header {
+  z-index: 100;
   position: sticky;
   top: 0;
   background-color: #f7f7f8;
@@ -160,7 +161,6 @@ nav a {
 /* main start */
 
 .main-about {
-  /* max-width: calc(100% - 32px); */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -186,7 +186,7 @@ nav a {
 main .line {
   background-color: #E4E4E7;
   height: 1px;
-  max-width: 1860px;
+  max-width: calc(100% - 32px);
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -256,7 +256,7 @@ main .line {
   position: relative;
 }
 
-.goals-footer-text{
+.goals-footer-text {
   z-index: 1;
 }
 
@@ -279,7 +279,7 @@ main .line {
   line-height: 150%;
 }
 
-.goals-footer img{
+.goals-footer img {
   position: absolute;
   top: 0;
   right: 14%;
@@ -443,31 +443,100 @@ footer .bottom-side span {
   /* header end */
   /* main start */
 
-
-  /* .main-about {
-    max-width: calc(100% - 32px);
+  .main-about {
     padding-bottom: 40px;
   }
-  
+
   .main-about h2 {
     font-size: 38px;
   }
-  
+
   .main-about p {
     width: 600px;
+    font-size: 16px
+  }
+
+  main .line {
+    max-width: calc(100% - 32px);
+    margin-bottom: 80px;
+  }
+
+  .achieve-info h2,
+  .goals-info h2 {
+    font-size: 30px;
+  }
+
+  .achieve-info p,
+  .goals-info p {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  .achieve-items,
+  .goals-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 100px;
+  }
+
+  .achieve-items .item,
+  .goals-items .item {
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .achieve-items .item h4,
+  .goals-items .item h4 {
+    margin: 24px 0 10px;
+    font-size: 20px;
+  }
+
+  .achieve-items .item p,
+  .goals-items .item p {
     font-size: 16px;
   }
-  
-  .line {
-    max-width: 1400px;
-  } */
 
+  .goals-items {
+    margin-bottom: 60px;
+  }
+
+  .goals-footer {
+    border-radius: 10px;
+    padding: 60px;
+    margin-bottom: 100px;
+  }
+
+  .goals-footer-text {
+    z-index: 1;
+  }
+
+  .goals-footer-text h4 {
+    font-size: 38px;
+    margin-bottom: 14px;
+    width: 757px;
+  }
+
+  .goals-footer-text p {
+    font-size: 16px;
+  }
+
+  .goals-footer img {
+    top: -20px;
+    right: 12%;
+  }
+
+
+  .goals-footer button {
+    font-size: 14px;
+    padding: 14px 20px;
+    border-radius: 6px;
+  }
 
   /* main end */
   /* footer start */
 
   footer .container {
-    padding: 60px 0 20px 0;
+    padding: 60px 20px 20px;
     gap: 30px;
   }
 
@@ -564,27 +633,103 @@ footer .bottom-side span {
   /* header end */
   /* main start */
 
-
-  /* .main-about {
-    max-width: calc(100% - 32px);
-    display:flex;
+  .main-about {
+    margin: 0 auto;
+    display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding-bottom: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
   }
-  
+
   .main-about h2 {
     font-size: 28px;
+    margin-bottom: 16px;
   }
-  
+
   .main-about p {
-    width: 358px;
+    width: 100%;
     font-size: 14px;
   }
-  
-  .line {
-    max-width: calc(100%-32px);
-  } */
+
+  main .line {
+    background-color: none;
+    margin-bottom: 50px;
+  }
+
+  .achieve-info h2,
+  .goals-info h2 {
+    font-size: 24px;
+  }
+
+  .achieve-info p,
+  .goals-info p {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  .achieve-items,
+  .goals-items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .achieve-items .item,
+  .goals-items .item {
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .achieve-items .item h4,
+  .goals-items .item h4 {
+    margin: 24px 0 6px;
+    font-size: 18px;
+  }
+
+  .achieve-items .item p,
+  .goals-items .item p {
+    font-size: 14px;
+  }
+
+  .goals-items {
+    margin-bottom: 50px;
+  }
+
+  .goals-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+
+  .goals-footer-text h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    width: 298px;
+  }
+
+  .goals-footer-text p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .goals-footer img {
+    width: 235px;
+    height: 235px;
+    top: 186px;
+    left: 45%;
+  }
+
+  .goals-footer button {
+    font-size: 14px;
+    padding: 14px 20px;
+    border-radius: 6px;
+  }
 
 
   /* main end */
@@ -640,4 +785,17 @@ footer .bottom-side span {
   footer .bottom-side span {
     font-size: 14px;
   }
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .achieve-items .item,
+  .goals-items .item {
+    text-align: center;
+    padding: 30px 60px;
+  }
+
+  .goals-footer-text h4 {
+    width: 100%;
+  }
+
 }
