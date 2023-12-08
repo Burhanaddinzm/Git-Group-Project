@@ -151,6 +151,7 @@ nav a {
 .burger-menu .bar:nth-child(1) {
   width: 18px;
 }
+
 main .container {
   padding: 109px 0 150px 0;
 }
@@ -210,15 +211,23 @@ main .sub-container .top button {
   border: 1px solid var(--white-95, #F1F1F3);
   background: var(--white-99, #FCFCFD);
   padding: 18px 24px;
+  color: var(--grey-15, #262626);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main .sub-container .top .paragraph button p {
+  width: 160px;
 }
 
 main .sub-container .images {
-  padding: 24px 0;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
 }
 
 main .sub-container .images img {
+  width: 32%;
   border-radius: 8px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
@@ -226,14 +235,15 @@ main .sub-container .images img {
 main .sub-container .buttons {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 main .sub-container .buttons .left {
   display: flex;
   align-items: flex-start;
 }
-main .sub-container .buttons .left  button{
+
+main .sub-container .buttons .left button {
   border-radius: 6px;
   border: 1px solid var(--white-95, #F1F1F3);
   background: var(--absolute-white, #FFF);
@@ -246,6 +256,7 @@ main .sub-container .buttons .left p {
   font-size: 20px;
   font-weight: 500;
 }
+
 main .sub-container .bottom .heading p {
   display: flex;
   padding: 24px 30px;
@@ -255,23 +266,25 @@ main .sub-container .bottom .heading p {
   font-weight: 600;
   line-height: 150%;
 }
-main .sub-container .bottom  .cards {
-display: flex;
-justify-content: space-around;
-}
-main .sub-container .bottom .cards .card-info h3 {
-  color: var(--grey-15, #262626);
-font-size: 50px;
-font-weight: 800;
-line-height: 150%;
-}
-main .sub-container .bottom .cards .card-info span {
-color: var(--grey-20, #333);
-font-size: 18px;
-font-weight: 500;
-line-height: 150%;
+
+main .sub-container .bottom .cards {
+  display: flex;
+  justify-content: space-around;
 }
 
+main .sub-container .bottom .cards .card-info h3 {
+  color: var(--grey-15, #262626);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+main .sub-container .bottom .cards .card-info span {
+  color: var(--grey-20, #333);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
 
 footer {
   background: #fff;
@@ -406,6 +419,41 @@ footer .bottom-side span {
     font-size: 14px;
   }
 
+  main .container {
+    padding: 80px 55px 120px ;
+    max-width:max-content;
+  }
+
+  main .container .heading {
+    padding-bottom: 40px;
+  }
+
+  main .sub-container {
+    margin-top: 40px;
+    padding: 40px 40px;
+  }
+
+  main .sub-container .top button {
+    padding: 14px 16px;
+  }
+
+  main .sub-container .images {
+    padding: 24px 0;
+  }
+
+  main .sub-container .images img {
+    border-radius: 6px;
+    width: 32%;
+  }
+
+  main .sub-container .buttons .left button {
+    padding: 0 12px;
+  }
+
+  main .sub-container .bottom .heading p {
+    padding: 20px 24px;
+  }
+
   footer .container {
     padding: 60px 0 20px 0;
     gap: 30px;
@@ -498,6 +546,80 @@ footer .bottom-side span {
   .burger-menu {
     opacity: 1;
     visibility: visible;
+  }
+
+  main .container {
+    padding: 109px 0 100px 0;
+    max-width: max-content;
+    margin: 0 30px;
+  }
+
+  main .container .heading {
+    display: grid;
+    padding-bottom: 50px;
+  }
+
+  main .sub-container {
+    margin-top: 50px;
+    padding: 24px 24px;
+  }
+
+
+  main .sub-container .paragraph {
+    display: grid;
+  }
+
+  main .sub-container .top button {
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+
+  main .sub-container .images {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main .sub-container .images img {
+    width: 32%;
+  }
+
+  main .sub-container .buttons {
+    display: grid;
+
+  }
+
+  main .sub-container .buttons .left {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  main .sub-container .buttons p {
+    padding-top: 16px;
+  }
+
+  main .sub-container .bottom .heading p {
+    padding-bottom: 16px;
+    ;
+  }
+
+  main .sub-container .bottom .cards {
+    display: grid;
+    justify-content: flex-start;
+  }
+
+  main .sub-container .bottom .cards .card-info h3 {
+    color: var(--grey-15, #262626);
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 150%;
+  }
+
+  main .sub-container .bottom .cards .card-info span {
+    color: var(--grey-20, #333);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
   }
 
   footer .container {
