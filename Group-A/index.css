@@ -428,6 +428,7 @@ footer .bottom-side span {
     font-size: 14px;
   }
 }
+
 /* ---------------------MAIN--------------------------- */
 main {
   margin-top: 100px;
@@ -455,9 +456,9 @@ main {
   justify-content: center;
   border: 1px solid #f1f1f3;
   background-color: #fcfcfd;
-  padding: 14px 0;
+  padding: 14px 20px;
   position: relative;
-  width: calc(100% - 120px);
+  width: auto;
   margin-bottom: 20px;
 }
 
@@ -477,8 +478,8 @@ main {
 }
 
 .introduction .wrapper .h2-container .bolt-img img {
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 
@@ -544,20 +545,160 @@ main .sponsor-container {
   margin-bottom: 100px;
 }
 
-main .sponsor-container .img-container{
+main .sponsor-container .img-container {
   padding: 30px 40px;
-  border-right:1px solid #F1F1F3;
+  border-right: 1px solid #F1F1F3;
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 1;
 }
 
-main .sponsor-container .img-container:last-child{
-  border-right:1px solid transparent;
-  border-left:1px solid #F1F1F3;
+main .sponsor-container .img-container img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-main .index-main-image{
+
+main .sponsor-container .img-container:last-child {
+  border-right: 1px solid transparent;
+  border-left: 1px solid #F1F1F3;
+}
+
+main .index-main-image {
   margin-bottom: 150px;
+}
+
+main .index-main-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+@media screen and (max-width: 1440px) {
+  main {
+    margin-top: 80px;
+  }
+
+  .introduction {
+    width: 941px;
+  }
+
+  .introduction .wrapper .h2-container {
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .introduction .wrapper .h2-container .bolt-img {
+    padding: 12px;
+  }
+
+  .introduction .wrapper .h2-container h2 {
+    font-size: 36px;
+  }
+
+  .introduction .wrapper h3 {
+    font-size: 28px;
+    margin-bottom: 6px;
+  }
+
+  .introduction .wrapper p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .introduction .btn-container button {
+    font-size: 14px;
+    padding: 14px 20px;
+    border-radius: 6px;
+  }
+
+  main .sponsor-container {
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 80px;
+  }
+
+  main .sponsor-container .img-container {
+    padding: 20px 30px;
+    max-width: 100%;
+  }
+
+  main .index-main-image {
+    margin-bottom: 100px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin-top: 50px;
+  }
+
+  .introduction {
+    width: 332px;
+  }
+
+  .introduction .wrapper .h2-container {
+    padding: 14px;
+  }
+
+  .introduction .wrapper .h2-container h2 {
+    font-size: 16px;
+  }
+
+  .introduction .wrapper .h2-container .bolt-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .introduction .wrapper .h2-container .introduction-effect {
+    top: -15px;
+    left: -15px;
+  }
+
+  .introduction .wrapper h3 {
+    font-size: 24px;
+  }
+
+  .introduction .wrapper p {
+    font-size: 14px;
+  }
+
+  .introduction .btn-container button {
+    margin-bottom: 30px;
+  }
+
+  main .sponsor-container {
+    padding: 10px;
+    margin-bottom: 80px;
+  }
+
+  main .sponsor-container .img-container:nth-child(3) {
+    border-right-color: transparent;
+    border-left-color: #F1F1F3;
+  }
+
+  main .sponsor-container .img-container:nth-child(4) {
+    display: none;
+  }
+
+  main .sponsor-container .img-container:nth-child(5) {
+    display: none;
+  }
+
+  main .sponsor-container .img-container:nth-child(6) {
+    display: none;
+  }
+
+  main .sponsor-container .img-container:nth-child(7) {
+    display: none;
+  }
+
+  main .index-main-image {
+    margin-bottom: 50px;
+  }
 }
