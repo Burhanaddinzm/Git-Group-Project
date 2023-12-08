@@ -330,7 +330,7 @@ footer .bottom-side span {
 @media screen and (max-width: 1024px) {
   .container {
     max-width: calc(100%-32px);
-    padding: 0 20px;
+    padding: 0 16px;
   }
 
   .sale-wrapper {
@@ -918,4 +918,3 @@ main .index-main-image img {
 }
 
 /* Courses-Container */
-
