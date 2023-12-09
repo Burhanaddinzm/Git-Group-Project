@@ -19,7 +19,6 @@ ul {
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
-  height: 120vh;
   background-color: #f7f7f8;
   position: relative;
 }
@@ -54,6 +53,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #f7f7f8;
+  z-index: 10000;
 }
 
 .header {
@@ -501,13 +501,13 @@ footer .bottom-side span {
 @media screen and (max-width: 1024px) {
   .container {
     max-width: calc(100%-32px);
-    padding: 0 20px;
+    padding: 0 16px;
   }
 
   .sale-wrapper {
     padding: 10px 16px;
     max-width: calc(100%-32px);
-    margin: 40px 16px 0;
+    margin: 40px 13px 0;
   }
 
   .sale-wrapper a {
@@ -600,7 +600,6 @@ footer .bottom-side span {
 
   main .sub-container .bottom .heading p {
     padding-bottom: 16px;
-    ;
   }
 
   main .sub-container .bottom .cards {
