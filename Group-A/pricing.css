@@ -459,6 +459,7 @@ main {
   font-size: 48px;
   font-weight: 600;
   flex-grow: 1;
+  align-self: center;
 }
 
 .pricing-container .wrapper .text-container p {
@@ -723,6 +724,7 @@ main {
 
   .pricing-container .wrapper .text-container h2 {
     font-size: 28px;
+    align-self: start;
   }
 
   .pricing-container .wrapper .text-container p {
