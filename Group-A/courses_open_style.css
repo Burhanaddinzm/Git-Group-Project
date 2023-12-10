@@ -105,11 +105,6 @@ nav a {
   background-color: #f1f1f3;
 }
 
-.header .right-side {
-  display: flex;
-  gap: 30px;
-}
-
 .header .right-side a {
   border: 1px solid transparent;
   cursor: pointer;
@@ -261,7 +256,7 @@ align-self: center;
   line-height: 30px;
   height: 27px;
 }
-.feature-item:nth-child(3) #heading {
+.card:nth-child(1) .feature-items .feature-item:nth-child(3) .item-left-side #heading {
   margin-bottom: 30px;
 }
 .card .feature-items .feature-item .item-left-side #lesson {
@@ -280,7 +275,6 @@ align-self: center;
   border-radius: 6px;
   font-size: 18px;
   font-weight: 400;
-  display: flex;
   gap: 4px;
 }
 .active {
@@ -443,15 +437,23 @@ main .top-side #paragraph{
 }
 .cards{
   width: 100%;
+  margin-top: 60px;
+
 }
 .cards .card{
   width: 630px;
-  height: 551px;
+  height: 527px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   padding: 40px;
-  margin-top: 80px;
+  margin-top: 20px !important;
+}
+.cards:nth-child(1){
+  height: 588px;
+}
+.cards:nth-child(2){
+  height: 588px;
 }
 .cards:nth-child(3){
   margin-bottom: 80px;
@@ -474,11 +476,16 @@ letter-spacing: -0.12px;
 }
 .card .feature-items .feature-item{
   padding: 20px 24px;
+  width: 550px;
+}
+.feature-item .item-left-side{
+  display: flex;
+  gap: 0px !important;
 }
 .feature-items .feature-item .item-left-side #heading{
-  font-size: 16px;
+  font-size: 16px !important;
   height: 24px;
-  width: 441px !important;
+  width: 345px !important;
 }
 .feature-items .feature-item .item-left-side #lesson span{
   font-size: 14px;
@@ -487,8 +494,16 @@ letter-spacing: -0.12px;
 .feature-item .time{
   padding: 10px;
   font-size: 14px;
+  background-color: #f7f7f8;
+  color: #59595a;
+  border-radius: 6px;
+  font-weight: 400;
+  gap: 4px;
+} 
+.feature-item:nth-child(3) {
+  display: flex;
+  gap: 0px !important;
 }
-
 
 
 
@@ -547,7 +562,7 @@ letter-spacing: -0.12px;
 
 @media screen and (max-width: 1024px) {
   .container {
-    max-width: calc(100%px-32px);
+    max-width: 390px;
     padding: 40px 16px 0 16px;
   }
 
@@ -572,7 +587,6 @@ letter-spacing: -0.12px;
   .header .left-side {
     gap: 0px;
   }
-
   .logo {
     width: 36px;
     height: 36px;
@@ -583,6 +597,7 @@ letter-spacing: -0.12px;
   }
 
   .header .right-side {
+    display: flex;
     gap: 20px;
   }
 
@@ -619,24 +634,20 @@ letter-spacing: -0.12px;
       border-radius: 10px;
     }
     .cards{
-      padding: 30px;
-      width: 100%;
+      max-width: 100%;
+      margin-right: 16px;
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
     .cards .card{
-      width: 358px;
+      max-width: 358px;
       height: 837px;
       display: flex;
       flex-direction: column;
       gap: 30px;
       padding: 24px;
-      /* margin-top: 80px; */
     }
-    /* .cards:nth-child(3){
-      margin-bottom: 80px;
-    } */
     .card #number{
       font-size: 50px;
       height: 37px;
@@ -658,7 +669,7 @@ letter-spacing: -0.12px;
     .card .feature-items .feature-item{
       width: 298px;
       height: 183px;
-      padding: 24px;
+      padding: 24px !important;
       display: flex;
       flex-direction: column;
       gap: 24px;
@@ -693,9 +704,15 @@ letter-spacing: -0.12px;
     .feature-item .time{
 left: 0;
       font-size: 14px;
+      left: 0 !important;
     }    
+    .feature-item .time span{
+      line-height: normal;
+    }
 
-
+.cards:nth-child(3) .feature-items:nth-child(1) #lesson{
+  margin-top: 30px
+}
 
 
 
