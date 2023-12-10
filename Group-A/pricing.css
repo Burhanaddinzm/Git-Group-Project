@@ -437,34 +437,39 @@ main {
 .pricing-container {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 50px;
 }
 .pricing-container .wrapper {
   display: flex;
   width: 100%;
-  gap: 300px;
+  gap: 100px;
+  flex-direction: column;
 }
 
 .pricing-container .wrapper .text-container {
   display: flex;
   flex-grow: 1;
-  flex-direction: column;
+  gap: 100px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e4e4e7;
 }
 
 .pricing-container .wrapper .text-container h2 {
   color: #262626;
   font-size: 48px;
   font-weight: 600;
+  flex-grow: 1;
 }
 
 .pricing-container .wrapper .text-container p {
   color: #59595a;
   font-size: 18px;
   font-weight: 400;
+  max-width: 50%;
 }
 
 .pricing-container .wrapper .btn-container {
-  align-self: end;
+  align-self: center;
   padding: 12px;
   display: flex;
   background-color: #fff;
@@ -623,11 +628,13 @@ main {
 }
 
 @media screen and (max-width: 1440px) {
-  .pricing-container {
-    gap: 60px;
-  }
   .pricing-container .wrapper {
-    gap: 250px;
+    gap: 80px;
+  }
+
+  .pricing-container .wrapper .text-container {
+    gap: 80px;
+    padding-bottom: 40px;
   }
 
   .pricing-container .wrapper .text-container h2 {
@@ -700,12 +707,18 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+  .pricing-container .wrapper {
+    gap: 50px;
+  }
+
+  .pricing-container .wrapper .text-container {
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 30px;
+  }
+
   .pricing-container {
     gap: 40px;
-  }
-  .pricing-container .wrapper {
-    flex-direction: column;
-    gap: 20px;
   }
 
   .pricing-container .wrapper .text-container h2 {
@@ -714,10 +727,7 @@ main {
 
   .pricing-container .wrapper .text-container p {
     font-size: 14px;
-  }
-
-  .pricing-container .wrapper .btn-container {
-    align-self: center;
+    max-width: 100%;
   }
 
   .pricing-container .wrapper .btn-container button {
