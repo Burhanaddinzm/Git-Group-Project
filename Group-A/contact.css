@@ -96,6 +96,33 @@ nav li {
   border-radius: 8px;
   font-size: 18px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+nav li .courses-open:hover {
+  visibility:visible;
+  opacity: 1;
+}
+
+nav li .courses:hover + .courses-open {
+  visibility:visible;
+  opacity: 1;
+}
+
+nav li .courses-open {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms linear;
+  position: absolute;
+  top: 39px;
+  padding-top: 12px;
+}
+
+nav li .courses-open span {
+  padding-top: 2px;
+  white-space: pre-line;
 }
 
 nav a {
