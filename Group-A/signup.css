@@ -6,6 +6,7 @@
 
 button {
   font-family: inherit;
+  cursor: pointer;
 }
 
 a {
@@ -95,6 +96,33 @@ nav li {
   border-radius: 8px;
   font-size: 18px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+nav li .courses-open:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav li .courses:hover + .courses-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav li .courses-open {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms linear;
+  position: absolute;
+  top: 39px;
+  padding-top: 12px;
+}
+
+nav li .courses-open span {
+  padding-top: 2px;
+  white-space: pre-line;
 }
 
 nav a {
@@ -433,6 +461,7 @@ footer .bottom-side span {
 /* ---------------------MAIN--------------------------- */
 main {
   margin-bottom: 150px;
+  margin-top: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -441,8 +470,8 @@ main {
 }
 
 main .left_side {
-  width: 829PX;
-  height: 593PX;
+  width: 829px;
+  height: 593px;
 }
 
 main .birinci h1 {
@@ -455,7 +484,7 @@ main .birinci h1 {
 
 main .birinci p {
   font-size: 18px;
-  color: #59595A;
+  color: #59595a;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -488,9 +517,8 @@ main .ikinci button {
   align-items: center;
   gap: 8px;
   border-radius: 8px;
-  border: 1px solid #F1F1F3;
-  background-color: #F7F7F8;
-
+  border: 1px solid #f1f1f3;
+  background-color: #f7f7f8;
 }
 
 main .ikinci .asagi {
@@ -499,15 +527,13 @@ main .ikinci .asagi {
   justify-content: space-between;
   align-items: center;
   padding: 60px 50px;
-  background-color: #FFF;
+  background-color: #fff;
   height: 60px;
-
 }
 
 main .ikinci .asagi .left-side {
   display: flex;
   flex-direction: row;
-
 }
 
 main .ikinci .asagi .right-side {
@@ -522,15 +548,13 @@ main .icon {
   height: 50px;
 }
 
-
-
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!rith!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 main .right_side {
   width: 660px;
   height: 997px;
   padding: 50px;
-  background-color: #FFF;
+  background-color: #fff;
   padding-top: 20px;
 }
 
@@ -552,12 +576,11 @@ main .right_side .top-side p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #4C4C4D;
+  color: #4c4c4d;
   margin-bottom: 50px;
-
 }
 
- main .form {
+main .form {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -569,23 +592,22 @@ main .form .form-element {
   gap: 14px;
 }
 
- main input {
+main input {
   display: flex;
   padding: 24px;
   align-items: center;
   gap: 10px;
   align-self: stretch;
   border-radius: 10px;
-  border: 1px solid #F1F1F3;
-  background-color: #FCFCFD;
+  border: 1px solid #f1f1f3;
+  background-color: #fcfcfd;
 }
 
- main .check {
+main .check {
   display: flex;
   align-items: flex-start;
   justify-content: baseline;
   gap: 10px;
-
 }
 
 main .lastInput {
@@ -598,7 +620,6 @@ main .lastInput {
 
 main .lastInput input {
   width: 100%;
-
 }
 
 main .lastInput img {
@@ -636,9 +657,9 @@ main .google {
   gap: 14px;
   font-size: 18px;
   line-height: 150%;
-  background-color: #F1F1F3;
+  background-color: #f1f1f3;
   border-radius: 10px;
-  border: 1px solid #F1F1F3;
+  border: 1px solid #f1f1f3;
 }
 
 main .google img {
@@ -657,12 +678,9 @@ main .strelka {
 }
 
 main .left-side .right-side {
-
   gap: 100px;
   display: flex;
-
 }
-
 
 @media screen and (max-width: 1440px) {
   .container {
@@ -713,7 +731,6 @@ main .left-side .right-side {
 
     main form {
       padding: 40px;
-
     }
 
     main .form h3 {
@@ -724,19 +741,13 @@ main .left-side .right-side {
       gap: 20px;
     }
 
-
     main .form .google {
       padding: 16px 24px;
       gap: 24px;
     }
-
-
   }
 
-
-
   @media screen and (max-width: 1024px) {
-
     main {
       display: flex;
       flex-direction: column;
@@ -805,7 +816,6 @@ main .left-side .right-side {
 
     main form {
       padding: 40px;
-
     }
 
     main .form h3 {
@@ -815,7 +825,6 @@ main .left-side .right-side {
     main .from .form-element {
       gap: 20px;
     }
-
 
     main .form .google {
       padding: 16px 24px;
