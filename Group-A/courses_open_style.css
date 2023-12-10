@@ -239,8 +239,11 @@ main .top-side #paragraph {
   border-radius: 8px;
   padding: 24px 30px;
 }
-.feature-item:nth-child(3) .time {
-  width: 167px;
+.feature-items:nth-child(3) .time {
+  max-width: 167px;
+}
+.feature-items:nth-child(3) .time {
+  max-width: 167px;
 }
 .card .feature-items .feature-item .item-left-side {
   display: flex;
@@ -254,7 +257,6 @@ main .top-side #paragraph {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  /* height: 27px; */
 }
 
 .card .feature-items .feature-item .item-left-side #lesson {
@@ -262,7 +264,6 @@ main .top-side #paragraph {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  /* height: 27px; */
 }
 
 .card .feature-items .feature-item .time {
@@ -485,11 +486,9 @@ footer .bottom-side span {
   }
   .feature-items .feature-item .item-left-side #heading {
     font-size: 16px !important;
-    /* height: 24px; */
     width: 345px !important;
   }
-  .feature-items .feature-item .item-left-side #lesson{
-    /* padding-top: 30px; */
+  .feature-items .feature-item .item-left-side #lesson {
     font-size: 14px;
     height: 24px;
   }
@@ -501,6 +500,9 @@ footer .bottom-side span {
     border-radius: 6px;
     font-weight: 400;
     gap: 4px;
+  }
+  .feature-item .time span {
+    font-size: 14px;
   }
   .feature-item:nth-child(3) {
     display: flex;
@@ -686,25 +688,25 @@ footer .bottom-side span {
     font-size: 14px !important;
     margin-top: 25px;
   }
-  .feature-item:nth-child(3) .item-left-side #lesson {
-    margin-top: 0px !important;
-  }
   .feature-items .feature-item .item-left-side #lesson span {
     font-size: 14px;
   }
+  .feature-items:nth-child(3) #lesson {
+    margin-top: 20px !important;
+  }
+  /* .feature-items:nth-child(3) .time{
+    margin-top: 20px  !important;
+  } */
   .feature-item .time {
-    left: 0;
     font-size: 14px;
-    left: 0 !important;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 10px !important;
   }
   .feature-item .time span {
     line-height: normal;
+    font-size: 14px;
   }
-
-  .cards:nth-child(3) .feature-items:nth-child(1) #lesson {
-    margin-top: 30px;
-  }
-
   footer .container {
     padding: 50px 20px 24px;
     gap: 20px;
