@@ -95,6 +95,39 @@ nav li {
   border-radius: 8px;
   font-size: 18px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+nav li .courses-open:hover {
+  visibility:visible;
+  opacity: 1;
+  color: #ff9500;
+}
+
+nav li .courses{
+  transition: all 300ms linear;
+}
+
+nav li .courses:hover + .courses-open {
+  visibility:visible;
+  opacity: 1;
+  color: #ff9500;
+}
+
+nav li .courses-open {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms linear;
+  position: absolute;
+  top: 39px;
+  padding-top: 12px;
+}
+
+nav li .courses-open span {
+  padding-top: 2px;
+  white-space: pre-line;
 }
 
 nav a {
@@ -279,11 +312,6 @@ main .top-side #paragraph {
   gap: 4px;
 }
 
-.active {
-  border: 2px solid #ffd599;
-  box-shadow: 0px 0px 0px 4px #fff4e5;
-  background-color: #fff;
-}
 .active .time {
   background-color: #ffeacc !important;
 }
@@ -560,7 +588,7 @@ footer .bottom-side span {
   }
 
   .sale-wrapper {
-    padding: 10px 16px;
+    padding: 10px 13px;
     max-width: calc(100%-32px);
     margin: 40px 16px 0;
   }
